@@ -1,0 +1,429 @@
+<template><div><h1 id="四、dom节点-移动端滑动" tabindex="-1"><a class="header-anchor" href="#四、dom节点-移动端滑动" aria-hidden="true">#</a> 四、DOM节点&amp;移动端滑动</h1>
+<h2 id="日期对象" tabindex="-1"><a class="header-anchor" href="#日期对象" aria-hidden="true">#</a> 日期对象</h2>
+<p>可以得到当前系统的时间</p>
+<p><strong>语法：</strong></p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token comment">// 获取当前时间</span>
+<span class="token keyword">const</span> date <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 获取指定时间</span>
+<span class="token keyword">const</span> date <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token string">'2008-8-8'</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>date<span class="token punctuation">)</span> <span class="token comment">// 2008-08-07T16:00:00.000Z</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="日期对象方法" tabindex="-1"><a class="header-anchor" href="#日期对象方法" aria-hidden="true">#</a> 日期对象方法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">方法</th>
+<th style="text-align:center">作用</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">getFullYear()</td>
+<td style="text-align:center">获得年份</td>
+<td style="text-align:center">获取四位年份</td>
+</tr>
+<tr>
+<td style="text-align:center">getMonth()</td>
+<td style="text-align:center">获取月份</td>
+<td style="text-align:center">取值为 0~11</td>
+</tr>
+<tr>
+<td style="text-align:center">getDate()</td>
+<td style="text-align:center">获取月份中的每一天</td>
+<td style="text-align:center">不同月份取值也不同</td>
+</tr>
+<tr>
+<td style="text-align:center">getDay()</td>
+<td style="text-align:center">获取星期</td>
+<td style="text-align:center">取值为0~6</td>
+</tr>
+<tr>
+<td style="text-align:center">getHours()</td>
+<td style="text-align:center">获取小时</td>
+<td style="text-align:center">取值为0~23</td>
+</tr>
+<tr>
+<td style="text-align:center">getMinutes()</td>
+<td style="text-align:center">获取分钟</td>
+<td style="text-align:center">取值为0~59</td>
+</tr>
+<tr>
+<td style="text-align:center">getSeconds()</td>
+<td style="text-align:center">获取秒</td>
+<td style="text-align:center">取值为0~59</td>
+</tr>
+</tbody>
+</table>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>月份、小时、分钟、秒都要+1</p>
+</div>
+<h3 id="时间戳" tabindex="-1"><a class="header-anchor" href="#时间戳" aria-hidden="true">#</a> 时间戳</h3>
+<p>指1970年01月01日00时00分00秒起至现在的毫秒数，它是一种特殊的计量时间的方式。</p>
+<p>主要是可以实现倒计时的效果</p>
+<h4 id="算法" tabindex="-1"><a class="header-anchor" href="#算法" aria-hidden="true">#</a> 算法</h4>
+<ol>
+<li>将来的时间戳 - 现在的时间戳 = 剩余时间毫秒数</li>
+<li>剩余时间毫秒数 转换为 剩余时间的 年月日时分秒 就是 倒计时时间</li>
+<li>比如：将来时间戳  2000ms -  现在时间戳  1000ms = 1000ms</li>
+<li>1000ms 转换为就是 0小时0分1秒</li>
+</ol>
+<h4 id="怎么获取" tabindex="-1"><a class="header-anchor" href="#怎么获取" aria-hidden="true">#</a> 怎么获取？</h4>
+<ol>
+<li>使用 getTime() 方法</li>
+</ol>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> date <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
+<li>简写 +new Date()</li>
+</ol>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">+</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol start="3">
+<li>使用 Date.now()</li>
+</ol>
+<p>只能得到当前的时间戳，前面两个都可以返回指定时间的时间戳</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="倒计时案例" tabindex="-1"><a class="header-anchor" href="#倒计时案例" aria-hidden="true">#</a> 倒计时案例</h3>
+<ol>
+<li>静态框架</li>
+</ol>
+<div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+    <span class="token selector">.countdown</span> <span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 240px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 305px<span class="token punctuation">;</span>
+      <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+      <span class="token property">line-height</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> brown<span class="token punctuation">;</span>
+      <span class="token comment">/* background-size: 240px; */</span>
+      <span class="token comment">/* float: left; */</span>
+      <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.countdown .next</span> <span class="token punctuation">{</span>
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+      <span class="token property">margin</span><span class="token punctuation">:</span> 25px 0 14px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.countdown .title</span> <span class="token punctuation">{</span>
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 33px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.countdown .tips</span> <span class="token punctuation">{</span>
+      <span class="token property">margin-top</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span>
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 23px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.countdown small</span> <span class="token punctuation">{</span>
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 17px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.countdown .clock</span> <span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 142px<span class="token punctuation">;</span>
+      <span class="token property">margin</span><span class="token punctuation">:</span> 18px auto 0<span class="token punctuation">;</span>
+      <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.countdown .clock span,
+    .countdown .clock i</span> <span class="token punctuation">{</span>
+      <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+      <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+      <span class="token property">line-height</span><span class="token punctuation">:</span> 34px<span class="token punctuation">;</span>
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 23px<span class="token punctuation">;</span>
+      <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.countdown .clock span</span> <span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 34px<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 34px<span class="token punctuation">;</span>
+      <span class="token property">border-radius</span><span class="token punctuation">:</span> 2px<span class="token punctuation">;</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> #303430<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.countdown .clock i</span> <span class="token punctuation">{</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+      <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>countdown<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>next<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>今天是2222年2月22日<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>下班倒计时<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>clock<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hour<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>00<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span><span class="token punctuation">></span></span>:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>minutes<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>25<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span><span class="token punctuation">></span></span>:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>second<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>20<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tips<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>18:30:00下课<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
+<li>填写逻辑</li>
+</ol>
+<div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">function</span> <span class="token function">getCountTime</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> now <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> last <span class="token operator">=</span> <span class="token operator">+</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token string">'2023-11-20 18:30:00'</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> count <span class="token operator">=</span> <span class="token punctuation">(</span>last <span class="token operator">-</span> now<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1000</span>
+
+    h <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>count <span class="token operator">/</span> <span class="token number">60</span> <span class="token operator">/</span> <span class="token number">60</span> <span class="token operator">%</span> <span class="token number">24</span><span class="token punctuation">)</span>
+    m <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>count <span class="token operator">/</span> <span class="token number">60</span> <span class="token operator">%</span> <span class="token number">60</span><span class="token punctuation">)</span>
+    s <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>count <span class="token operator">%</span> <span class="token number">60</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> hour <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#hour'</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> minutes <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#minutes'</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> second <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#second'</span><span class="token punctuation">)</span>
+
+    hour<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> h<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    minutes<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> m<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    second<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  
+  <span class="token function">setInterval</span><span class="token punctuation">(</span>getCountTime<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="节点操作" tabindex="-1"><a class="header-anchor" href="#节点操作" aria-hidden="true">#</a> 节点操作</h2>
+<h3 id="dom-节点" tabindex="-1"><a class="header-anchor" href="#dom-节点" aria-hidden="true">#</a> DOM 节点</h3>
+<p>DOM树里每一个内容都可以称之为节点</p>
+<p><img src="@source/notes/fe/javascript/Web Apis/md_img/image-20231120120547145.png" alt="image-20231120120547145" loading="lazy"></p>
+<h4 id="节点类型" tabindex="-1"><a class="header-anchor" href="#节点类型" aria-hidden="true">#</a> 节点类型</h4>
+<ul>
+<li>元素节点：所有的标签，比如 body、div，html是根节点</li>
+<li>属性节点：所有的熟悉你个，比如 href</li>
+<li>文本节点：所有的文本</li>
+<li>其他</li>
+</ul>
+<h3 id="查找节点" tabindex="-1"><a class="header-anchor" href="#查找节点" aria-hidden="true">#</a> 查找节点</h3>
+<h4 id="父节点查找" tabindex="-1"><a class="header-anchor" href="#父节点查找" aria-hidden="true">#</a> 父节点查找</h4>
+<p><strong>语法：</strong> <code v-pre>子元素.parentNode</code></p>
+<ul>
+<li>parentNode 属性</li>
+<li>返回最近一级的父节点，找不到返回null</li>
+</ul>
+<p>这样操作就不需要每个节点都要用 <code v-pre>document.querySelector</code> 获取节点，只需要获取一个子节点，然后再通过子节点获取父节点就行了。</p>
+<p>示例：</p>
+<p>关闭盒子</p>
+<div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>box<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    我是广告
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>box1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>X<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  	<span class="token keyword">const</span> box1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.box1'</span><span class="token punctuation">)</span>
+    box1<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>style<span class="token punctuation">.</span>display <span class="token operator">=</span> <span class="token string">'none'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="子节点查找" tabindex="-1"><a class="header-anchor" href="#子节点查找" aria-hidden="true">#</a> 子节点查找</h4>
+<ol>
+<li>
+<p>childNodes</p>
+<ul>
+<li>获得所有子节点，包括文本节点、注释节点等</li>
+</ul>
+</li>
+<li>
+<p>children 属性（重点）</p>
+</li>
+</ol>
+<p><strong>语法：</strong> <code v-pre>父元素.children</code></p>
+<ul>
+<li>仅获得所有元素节点</li>
+<li>返回的是一个为数组</li>
+</ul>
+<h4 id="兄弟关系查找" tabindex="-1"><a class="header-anchor" href="#兄弟关系查找" aria-hidden="true">#</a> 兄弟关系查找</h4>
+<ol>
+<li>下一个兄弟节点
+<ul>
+<li>nextElementSibling 属性</li>
+</ul>
+</li>
+<li>上一个兄弟节点
+<ul>
+<li>previousElementSibling 属性</li>
+</ul>
+</li>
+</ol>
+<h3 id="增加节点" tabindex="-1"><a class="header-anchor" href="#增加节点" aria-hidden="true">#</a> 增加节点</h3>
+<p>创造要给新的网页元素添加到网页内。</p>
+<p>一般是先创建节点，然后插入节点。</p>
+<p><strong>语法：</strong></p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token comment">// 创造一个新的元素节点</span>
+document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'标签名'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 插入到这个父元素的最后</span>
+父元素<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>要插入的元素<span class="token punctuation">)</span>
+
+<span class="token comment">// 插入到某个子元素的前面</span>
+父元素<span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>要插入的元素<span class="token punctuation">,</span> 在哪个元素前面<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="克隆节点" tabindex="-1"><a class="header-anchor" href="#克隆节点" aria-hidden="true">#</a> 克隆节点</h4>
+<p>特殊情况下，可以复制一个原有的节点，然后把复制的节点放入到指定的元素内部。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token comment">// 克隆要给已有的元素节点</span>
+<span class="token comment">// 默认为 false</span>
+<span class="token comment">// 若为 true，则代表克隆时会包含后代节点一起克隆</span>
+<span class="token comment">// 若为 false,则代表克隆时不包含后代节点</span>
+元素<span class="token punctuation">.</span><span class="token function">cloneNode</span><span class="token punctuation">(</span>布尔值<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="删除节点" tabindex="-1"><a class="header-anchor" href="#删除节点" aria-hidden="true">#</a> 删除节点</h3>
+<p><strong>语法：</strong> <code v-pre>父元素.removeChild(要删除的元素)</code></p>
+<p>要删除元素必须通过父元素删除，而且删除节点和隐藏节点（<code v-pre>display: none</code>）是由区别的，隐藏节点节点还是存在的；删除节点则是在html中删除。</p>
+<h2 id="m端事件" tabindex="-1"><a class="header-anchor" href="#m端事件" aria-hidden="true">#</a> M端事件</h2>
+<h3 id="常见的触屏事件" tabindex="-1"><a class="header-anchor" href="#常见的触屏事件" aria-hidden="true">#</a> 常见的触屏事件</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">触屏touch事件</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">touchstart</td>
+<td style="text-align:center">手指触摸到一个 DOM 元素时触发</td>
+</tr>
+<tr>
+<td style="text-align:center">touchmove</td>
+<td style="text-align:center">手指在一个 DOM 元素上滑动时触发</td>
+</tr>
+<tr>
+<td style="text-align:center">touchend</td>
+<td style="text-align:center">手指从一个 DOM 元素上移开时触发</td>
+</tr>
+</tbody>
+</table>
+<h2 id="js-插件" tabindex="-1"><a class="header-anchor" href="#js-插件" aria-hidden="true">#</a> JS 插件</h2>
+<p>把别人写好的代码，只需要CV就能实现对应的效果，成为真正的CV工程师。😝</p>
+<h2 id="综合案例" tabindex="-1"><a class="header-anchor" href="#综合案例" aria-hidden="true">#</a> 综合案例</h2>
+<h3 id="学生信息表案例" tabindex="-1"><a class="header-anchor" href="#学生信息表案例" aria-hidden="true">#</a> 学生信息表案例</h3>
+<h4 id="业务" tabindex="-1"><a class="header-anchor" href="#业务" aria-hidden="true">#</a> 业务</h4>
+<ol>
+<li>点击录入按钮可以录入数据</li>
+<li>点击删除可以删除当前的数据</li>
+</ol>
+<h4 id="代码编写" tabindex="-1"><a class="header-anchor" href="#代码编写" aria-hidden="true">#</a> 代码编写</h4>
+<ol>
+<li>静态结构</li>
+</ol>
+<div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>新增学员<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>info<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>off<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    姓名：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>uname<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>uname<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    年龄：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>age<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>age<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    性别:
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gender<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gender<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>男<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>男<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>女<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>女<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span>
+    薪资：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>salary<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>salary<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    就业城市：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>city<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>city<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>北京<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>北京<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>上海<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>上海<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>广州<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>广州<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>深圳<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>深圳<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>曹县<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>曹县<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>add<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>录入<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>就业榜<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>学号<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>姓名<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>年龄<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>性别<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>薪资<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>就业城市<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>操作<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span>
+      <span class="token comment">&lt;!-- 
+        &lt;tr>
+        &lt;td>1001&lt;/td>
+        &lt;td>欧阳霸天&lt;/td>
+        &lt;td>19&lt;/td>
+        &lt;td>男&lt;/td>
+        &lt;td>15000&lt;/td>
+        &lt;td>上海&lt;/td>
+        &lt;td>
+        &lt;a href="javascript:">删除&lt;/a>
+        &lt;/td>
+        &lt;/tr> 
+			--></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
+<li>填写逻辑</li>
+</ol>
+<div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">const</span> uname <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.uname'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> age <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.age'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> gender <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.gender'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> salary <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.salary'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> city <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.city'</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> tbody <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'tbody'</span><span class="token punctuation">)</span>
+  
+	<span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  
+  <span class="token keyword">const</span> info <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.info'</span><span class="token punctuation">)</span>
+  info<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'submit'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> items<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>items<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">===</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'输入内容不能为空'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">stuId</span><span class="token operator">:</span> arr<span class="token punctuation">.</span>length <span class="token operator">+</span> <span class="token number">1</span>
+      <span class="token literal-property property">uname</span><span class="token operator">:</span> uname<span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+      <span class="token literal-property property">age</span><span class="token operator">:</span> age<span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+      <span class="token literal-property property">gender</span><span class="token operator">:</span> gender<span class="token punctuation">.</span>value
+      <span class="token literal-property property">salary</span><span class="token operator">:</span> salary<span class="token punctuation">.</span>value
+      <span class="token literal-property property">city</span><span class="token operator">:</span> city<span class="token punctuation">.</span>value
+    <span class="token punctuation">}</span>
+    arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  
+  <span class="token keyword">function</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    tbody<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">''</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> tr <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'tr'</span><span class="token punctuation">)</span>
+      tr<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        &lt;td></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>stuId<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/td>
+        &lt;td></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>uname<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/td>
+        &lt;td></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>age<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/td>
+        &lt;td></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>gender<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/td>
+        &lt;td></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>salary<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/td>
+        &lt;td></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>city<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/td>
+        &lt;td>
+        	&lt;a href="javascript:" data-id=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">>删除&lt;/a>
+        &lt;/td>
+			</span><span class="token template-punctuation string">`</span></span>
+      tbody<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>tr<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  
+  tbody<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>tagName <span class="token operator">===</span> <span class="token string">'A'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      arr<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>id<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+      <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="@source/notes/fe/javascript/Web Apis/md_img/image-20231120175301061.png" alt="image-20231120175301061" loading="lazy"></p>
+</div></template>
+
+
