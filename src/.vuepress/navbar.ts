@@ -15,6 +15,7 @@ export default navbar([
           { text: "JavaScript", link: "javascript/JavaScript 基础/一、基础语法.md" },
           { text: "Vue", link: "vue/Vue2+Vue3 核心技术/第一章 Vue入门.md" },
           { text: "TypeScript", link: "typescript/TypeScript 基础教程/TypeScript.md" },
+          { text: "Git", link: "git/Git.md" }
         ]
       },
       {

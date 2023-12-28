@@ -10,6 +10,7 @@ export default sidebar({
   "/notes/fe/javascript": "structure",
   "/notes/fe/vue": "structure",
   "/notes/fe/typescript": "structure",
+  "/notes/fe/git": "structure",
 
   "/": [
     "",

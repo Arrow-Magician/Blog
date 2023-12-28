@@ -8,12 +8,12 @@
 <p>当然，还有以前学习时候个人感觉很不错的教程网站也会在这里面~</p>
 <p>敬请期待吧~</p>
 <h2 id="前端笔记目录" tabindex="-1"><a class="header-anchor" href="#前端笔记目录" aria-hidden="true">#</a> 前端笔记目录</h2>
-<p><RouterLink to="/notes/fe/html/">HTML</RouterLink></p>
-<p><RouterLink to="/notes/fe/css/">CSS</RouterLink></p>
-<p><RouterLink to="/notes/fe/javascript/">JavaScript</RouterLink></p>
-<p><RouterLink to="/notes/fe/vue/">Vue</RouterLink></p>
+<p><a href="/notes/fe/html/" target="_blank" rel="noopener noreferrer">HTML<ExternalLinkIcon/></a></p>
+<p><a href="/notes/fe/css/" target="_blank" rel="noopener noreferrer">CSS<ExternalLinkIcon/></a></p>
+<p><a href="/notes/fe/javascript/" target="_blank" rel="noopener noreferrer">JavaScript<ExternalLinkIcon/></a></p>
+<p><a href="/notes/fe/vue/" target="_blank" rel="noopener noreferrer">Vue<ExternalLinkIcon/></a></p>
 <h2 id="后端笔记目录" tabindex="-1"><a class="header-anchor" href="#后端笔记目录" aria-hidden="true">#</a> 后端笔记目录</h2>
-<p><RouterLink to="/notes/be/python/">Python</RouterLink></p>
+<p><a href="/notes/be/python/" target="_blank" rel="noopener noreferrer">Python<ExternalLinkIcon/></a></p>
 <h2 id="git" tabindex="-1"><a class="header-anchor" href="#git" aria-hidden="true">#</a> Git</h2>
 <h2 id="linux" tabindex="-1"><a class="header-anchor" href="#linux" aria-hidden="true">#</a> Linux</h2>
 <h2 id="计算机网络" tabindex="-1"><a class="header-anchor" href="#计算机网络" aria-hidden="true">#</a> 计算机网络</h2>
