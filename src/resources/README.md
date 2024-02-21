@@ -189,7 +189,7 @@ title: PPT
   <VPCard
     title="Duotone"
     desc="把图片放上去以后一键换色，相当于加一层带颜色蒙版"
-    logo="assets/ppt/download.png"
+    logo="https://arrow-magician.github.io/Blog/assets/resources/ppt/download.svg"
     link="https://duotone.shapefactory.co/?f=10c5f8&t=206a6a&q=_"
     background="rgba(255, 255, 255, 0.15)"
   />
