@@ -16,8 +16,8 @@ export default hopeTheme({
   logo: '/logo.svg',
   favicon: '/favicon.ico',
 
-  repo: 'https://gitee.com/arrowmagician',
-  repoLabel: 'Gitee',
+  repo: 'https://github.com/Arrow-Magician',
+  repoLabel: 'Github',
 
   docsDir: 'src',
 
@@ -78,6 +78,9 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true
+    },
+    components: {
+      components: ['VPCard']
     }
 
     // uncomment these if you want a pwa

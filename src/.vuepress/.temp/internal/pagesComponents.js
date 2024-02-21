@@ -21,14 +21,14 @@ export const pagesComponents = {
   "v-e8b6c472": defineAsyncComponent(() => import(/* webpackChunkName: "v-e8b6c472" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/index.html.vue")),
   // path: /resources/
   "v-7fe15663": defineAsyncComponent(() => import(/* webpackChunkName: "v-7fe15663" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/resources/index.html.vue")),
-  // path: /guide/bar/baz.html
-  "v-177e1f06": defineAsyncComponent(() => import(/* webpackChunkName: "v-177e1f06" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/bar/baz.html.vue")),
-  // path: /guide/bar/
-  "v-5d5c2d30": defineAsyncComponent(() => import(/* webpackChunkName: "v-5d5c2d30" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/bar/index.html.vue")),
   // path: /guide/foo/ray.html
   "v-0b6fc5f8": defineAsyncComponent(() => import(/* webpackChunkName: "v-0b6fc5f8" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/foo/ray.html.vue")),
   // path: /guide/foo/
   "v-5d5821d6": defineAsyncComponent(() => import(/* webpackChunkName: "v-5d5821d6" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/foo/index.html.vue")),
+  // path: /guide/bar/baz.html
+  "v-177e1f06": defineAsyncComponent(() => import(/* webpackChunkName: "v-177e1f06" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/bar/baz.html.vue")),
+  // path: /guide/bar/
+  "v-5d5c2d30": defineAsyncComponent(() => import(/* webpackChunkName: "v-5d5c2d30" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/bar/index.html.vue")),
   // path: /notes/hospital/
   "v-0b4bbb4e": defineAsyncComponent(() => import(/* webpackChunkName: "v-0b4bbb4e" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/hospital/index.html.vue")),
   // path: /notes/be/python/

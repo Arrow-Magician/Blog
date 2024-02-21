@@ -19,14 +19,14 @@ export const pagesData = {
   "v-e8b6c472": () => import(/* webpackChunkName: "v-e8b6c472" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/index.html.js").then(({ data }) => data),
   // path: /resources/
   "v-7fe15663": () => import(/* webpackChunkName: "v-7fe15663" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/resources/index.html.js").then(({ data }) => data),
-  // path: /guide/bar/baz.html
-  "v-177e1f06": () => import(/* webpackChunkName: "v-177e1f06" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/bar/baz.html.js").then(({ data }) => data),
-  // path: /guide/bar/
-  "v-5d5c2d30": () => import(/* webpackChunkName: "v-5d5c2d30" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/bar/index.html.js").then(({ data }) => data),
   // path: /guide/foo/ray.html
   "v-0b6fc5f8": () => import(/* webpackChunkName: "v-0b6fc5f8" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/foo/ray.html.js").then(({ data }) => data),
   // path: /guide/foo/
   "v-5d5821d6": () => import(/* webpackChunkName: "v-5d5821d6" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/foo/index.html.js").then(({ data }) => data),
+  // path: /guide/bar/baz.html
+  "v-177e1f06": () => import(/* webpackChunkName: "v-177e1f06" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/bar/baz.html.js").then(({ data }) => data),
+  // path: /guide/bar/
+  "v-5d5c2d30": () => import(/* webpackChunkName: "v-5d5c2d30" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/bar/index.html.js").then(({ data }) => data),
   // path: /notes/hospital/
   "v-0b4bbb4e": () => import(/* webpackChunkName: "v-0b4bbb4e" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/hospital/index.html.js").then(({ data }) => data),
   // path: /notes/be/python/

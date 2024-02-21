@@ -3,16 +3,16 @@ import { hasGlobalComponent } from "H:/Programming Storage/Front end development
 import { h } from "vue";
 
 import { useScriptTag } from "H:/Programming Storage/Front end development/VuePress/my-docs-v2/node_modules/.pnpm/@vueuse+core@10.7.0_vue@3.3.13/node_modules/@vueuse/core/index.mjs";
-import Badge from "H:/Programming Storage/Front end development/VuePress/my-docs-v2/node_modules/.pnpm/vuepress-plugin-components@2.0.0-rc.5_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
 import FontIcon from "H:/Programming Storage/Front end development/VuePress/my-docs-v2/node_modules/.pnpm/vuepress-plugin-components@2.0.0-rc.5_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import VPCard from "H:/Programming Storage/Front end development/VuePress/my-docs-v2/node_modules/.pnpm/vuepress-plugin-components@2.0.0-rc.5_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-components/lib/client/components/VPCard.js";
 import BackToTop from "H:/Programming Storage/Front end development/VuePress/my-docs-v2/node_modules/.pnpm/vuepress-plugin-components@2.0.0-rc.5_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
 
 import "H:/Programming Storage/Front end development/VuePress/my-docs-v2/node_modules/.pnpm/vuepress-plugin-components@2.0.0-rc.5_vuepress@2.0.0-rc.0/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
 
 export default defineClientConfig({
   enhance: ({ app }) => {
-    if(!hasGlobalComponent("Badge")) app.component("Badge", Badge);
     if(!hasGlobalComponent("FontIcon")) app.component("FontIcon", FontIcon);
+    if(!hasGlobalComponent("VPCard")) app.component("VPCard", VPCard);
     
   },
   setup: () => {
