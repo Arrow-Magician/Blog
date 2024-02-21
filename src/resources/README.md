@@ -27,14 +27,14 @@ title: PPT
   <VPCard
     title="PPT Store"
     desc="收费，质量超高，但近期好像不怎么更新了"
-    logo="https://www.pptstore.net/v1/img/none.png"
-    link="http://www.yanj.cn/"
+    logo="https://arrow-magician.github.io/Blog/assets/resources/ppt/pptstore.png"
+    link="https://www.pptstore.net/"
     background="rgba(255, 255, 255, 0.15)"
   />
   <VPCard
     title="锐普PPT 论坛"
     desc="免费，里面也有很多模板可以下载"
-    logo="http://www.rapidbbs.cn/favicon.ico"
+    logo="https://arrow-magician.github.io/Blog/assets/resources/ppt/ruipu.png"
     link="http://www.rapidbbs.cn/forum.php"
     background="rgba(255, 255, 255, 0.15)"
   />
@@ -43,6 +43,20 @@ title: PPT
     desc="微软官方，模板质量高，但是要开VIP"
     logo="https://www.officeplus.cn/imgs/OfficePlus.svg"
     link="https://www.officeplus.cn/"
+    background="rgba(255, 255, 255, 0.15)"
+  />
+  <VPCard
+    title="演界网"
+    desc="收费，没什么灵感可以来这里找找"
+    logo="https://arrow-magician.github.io/Blog/assets/resources/ppt/yanj.png"
+    link="http://www.yanj.cn/"
+    background="rgba(255, 255, 255, 0.15)"
+  />
+  <VPCard
+    title="觅知网"
+    desc="要会员，没什么灵感也可以来这里找找"
+    logo="https://arrow-magician.github.io/Blog/assets/resources/ppt/mizhi.png"
+    link="https://www.51miz.com/ppt/?utm_term=65773&utm_source=baidu"
     background="rgba(255, 255, 255, 0.15)"
   />
 </div>
@@ -182,14 +196,14 @@ title: PPT
   <VPCard
     title="在线书法字体转换"
     desc="可以把正文字转换成书法字体"
-    logo=""
+    logo="https://arrow-magician.github.io/Blog/assets/resources/ppt/shufa.png"
     link="http://www.shufaziti.com/"
     background="rgba(255, 255, 255, 0.15)"
   />
   <VPCard
     title="Duotone"
     desc="把图片放上去以后一键换色，相当于加一层带颜色蒙版"
-    logo="https://arrow-magician.github.io/Blog/assets/resources/ppt/download.svg"
+    logo="https://arrow-magician.github.io/Blog/assets/resources/ppt/Duotone.svg"
     link="https://duotone.shapefactory.co/?f=10c5f8&t=206a6a&q=_"
     background="rgba(255, 255, 255, 0.15)"
   />
@@ -198,6 +212,9 @@ title: PPT
 
 <style>
   .vp-card-logo{
-    border-radius: 0%
+    border-radius: 0%;
+  }
+  .vp-card-title{
+    font-weight: bold;
   }
 </style>
