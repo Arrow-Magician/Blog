@@ -1,5 +1,5 @@
 <template><div><h2 id="一键直达" tabindex="-1"><a class="header-anchor" href="#一键直达" aria-hidden="true">#</a> 一键直达</h2>
-<div class="vp-card-container">
+<div class="vp-card-container" id="app">
   <VPCard
     title="HiPPTer"
     desc="超全的网站，里面什么东西都有"
@@ -176,7 +176,7 @@
   <VPCard
     title="Duotone"
     desc="把图片放上去以后一键换色，相当于加一层带颜色蒙版"
-    logo="./img/download.svg"
+    logo="assets/ppt/download.svg"
     link="https://duotone.shapefactory.co/?f=10c5f8&t=206a6a&q=_"
     background="rgba(255, 255, 255, 0.15)"
   />
@@ -184,3 +184,9 @@
 </div></template>
 
 
+
+<style>
+  .vp-card-logo{
+    border-radius: 0%
+  }
+</style>
