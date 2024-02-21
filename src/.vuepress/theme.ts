@@ -1,29 +1,28 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
+import { hopeTheme } from 'vuepress-theme-hope'
+import navbar from './navbar.js'
+import sidebar from './sidebar.js'
 // import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: 'https://vuepress-theme-hope-docs-demo.netlify.app',
 
   author: {
-    name: "Arrow Magician",
-    url: "https://mister-hope.com",
+    name: 'Arrow Magician',
+    url: 'https://mister-hope.com'
   },
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: 'fontawesome-with-brands',
 
-  logo: "/logo.svg",
+  logo: '/logo.svg',
+  favicon: '/favicon.ico',
 
-  repo: "https://gitee.com/arrowmagician",
-  repoLabel: "Gitee",
+  repo: 'https://gitee.com/arrowmagician',
+  repoLabel: 'Gitee',
 
-  docsDir: "src",
+  docsDir: 'src',
 
-  // navbar
   navbar,
 
-  // sidebar
   sidebar,
 
   // footer: false,
@@ -32,13 +31,13 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-    },
+      '/demo/encrypt.html': ['1234']
+    }
   },
 
   // page meta
   // metaLocales: {
-  //   editLink: "在 GitHub 上编辑此页",
+  //   editLink: '在 GitHub 上编辑此页'
   // },
   editLink: false,
   breadcrumb: false,
@@ -64,21 +63,21 @@ export default hopeTheme({
       mark: true,
       stylize: [
         {
-          matcher: "Recommended",
+          matcher: 'Recommended',
           replacer: ({ tag }) => {
-            if (tag === "em")
+            if (tag === 'em')
               return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: 'Recommended'
+              }
+          }
+        }
       ],
       sub: true,
       sup: true,
       tabs: true,
-      vPre: true,
+      vPre: true
     }
 
     // uncomment these if you want a pwa
@@ -137,5 +136,5 @@ export default hopeTheme({
     //     ],
     //   },
     // },
-  },
-});
+  }
+})

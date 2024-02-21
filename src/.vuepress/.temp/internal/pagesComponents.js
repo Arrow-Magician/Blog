@@ -151,20 +151,28 @@ export const pagesComponents = {
   "v-628c9f67": defineAsyncComponent(() => import(/* webpackChunkName: "v-628c9f67" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue2_Vue3 核心技术/第五章  pinia笔记.html.vue")),
   // path: /notes/fe/vue/Vue2_Vue3%20%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%20Vue3%E5%85%A5%E9%97%A8.html
   "v-251dc97e": defineAsyncComponent(() => import(/* webpackChunkName: "v-251dc97e" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue2_Vue3 核心技术/第四章  Vue3入门.html.vue")),
-  // path: /notes/fe/vue/Vue3%20%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E4%B8%80%E3%80%81%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%88%9B%E5%BB%BA.html
-  "v-6c941eb4": defineAsyncComponent(() => import(/* webpackChunkName: "v-6c941eb4" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3 大事件管理系统/一、项目介绍与创建.html.vue")),
-  // path: /notes/fe/vue/Vue3%20%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E4%B8%89%E3%80%81%E9%A6%96%E9%A1%B5-layout.html
-  "v-53639d6a": defineAsyncComponent(() => import(/* webpackChunkName: "v-53639d6a" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3 大事件管理系统/三、首页-layout.html.vue")),
-  // path: /notes/fe/vue/Vue3%20%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E4%BA%8C%E3%80%81%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.html
-  "v-4e0e9f4b": defineAsyncComponent(() => import(/* webpackChunkName: "v-4e0e9f4b" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3 大事件管理系统/二、登录注册页面.html.vue")),
-  // path: /notes/fe/vue/Vue3%20%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E4%BA%94%E3%80%81%E6%96%87%E7%AB%A0%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html
-  "v-06d31031": defineAsyncComponent(() => import(/* webpackChunkName: "v-06d31031" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3 大事件管理系统/五、文章管理页面.html.vue")),
-  // path: /notes/fe/vue/Vue3%20%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%85%AD%E3%80%81%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.html
-  "v-0b614e06": defineAsyncComponent(() => import(/* webpackChunkName: "v-0b614e06" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3 大事件管理系统/六、个人中心.html.vue")),
-  // path: /notes/fe/vue/Vue3%20%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%9B%9B%E3%80%81%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2.html
-  "v-811d8508": defineAsyncComponent(() => import(/* webpackChunkName: "v-811d8508" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3 大事件管理系统/四、文章分类页面.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E4%B8%80%E3%80%81%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%88%9B%E5%BB%BA.html
+  "v-4ff20ce1": defineAsyncComponent(() => import(/* webpackChunkName: "v-4ff20ce1" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3大事件管理系统/一、项目介绍与创建.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E4%B8%89%E3%80%81%E9%A6%96%E9%A1%B5-layout.html
+  "v-348f81c6": defineAsyncComponent(() => import(/* webpackChunkName: "v-348f81c6" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3大事件管理系统/三、首页-layout.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E4%BA%8C%E3%80%81%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.html
+  "v-e7f476a0": defineAsyncComponent(() => import(/* webpackChunkName: "v-e7f476a0" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3大事件管理系统/二、登录注册页面.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E4%BA%94%E3%80%81%E6%96%87%E7%AB%A0%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.html
+  "v-44ca3596": defineAsyncComponent(() => import(/* webpackChunkName: "v-44ca3596" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3大事件管理系统/五、文章管理页面.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%85%AD%E3%80%81%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.html
+  "v-208872ab": defineAsyncComponent(() => import(/* webpackChunkName: "v-208872ab" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3大事件管理系统/六、个人中心.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%9B%9B%E3%80%81%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2.html
+  "v-052f3a3e": defineAsyncComponent(() => import(/* webpackChunkName: "v-052f3a3e" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3大事件管理系统/四、文章分类页面.html.vue")),
   // path: /notes/fe/vue/Vue3%E5%B0%8F%E5%85%94%E9%B2%9C%E9%A1%B9%E7%9B%AE/Vue3%E5%B0%8F%E5%85%94%E9%B2%9C%E9%A1%B9%E7%9B%AE.html
   "v-65ce7626": defineAsyncComponent(() => import(/* webpackChunkName: "v-65ce7626" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3小兔鲜项目/Vue3小兔鲜项目.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%B0%9A%E5%8C%BB%E9%80%9A/%E4%B8%80%E3%80%81%E9%A6%96%E9%A1%B5.html
+  "v-6f85bd40": defineAsyncComponent(() => import(/* webpackChunkName: "v-6f85bd40" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3尚医通/一、首页.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%B0%9A%E5%8C%BB%E9%80%9A/%E4%B8%89%E3%80%81%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83.html
+  "v-e8a06410": defineAsyncComponent(() => import(/* webpackChunkName: "v-e8a06410" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3尚医通/三、会员中心.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%B0%9A%E5%8C%BB%E9%80%9A/%E4%BA%8C%E3%80%81%E5%8C%BB%E9%99%A2%E4%BF%A1%E6%81%AF.html
+  "v-2d9ec6c3": defineAsyncComponent(() => import(/* webpackChunkName: "v-2d9ec6c3" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3尚医通/二、医院信息.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%B0%9A%E5%8C%BB%E9%80%9A/%E9%9B%B6%E3%80%81%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%88%9D%E5%A7%8B%E5%88%9B%E5%BB%BA.html
+  "v-17234e36": defineAsyncComponent(() => import(/* webpackChunkName: "v-17234e36" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3尚医通/零、项目介绍与初始创建.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/404.html.vue")),
   // path: /notes/be/
@@ -185,8 +193,10 @@ export const pagesComponents = {
   "v-4d6e6a82": defineAsyncComponent(() => import(/* webpackChunkName: "v-4d6e6a82" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue2_Vue3 核心技术/index.html.vue")),
   // path: /notes/fe/vue/
   "v-6f4d6f12": defineAsyncComponent(() => import(/* webpackChunkName: "v-6f4d6f12" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/index.html.vue")),
-  // path: /notes/fe/vue/Vue3%20%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/
-  "v-5b8b5af9": defineAsyncComponent(() => import(/* webpackChunkName: "v-5b8b5af9" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3 大事件管理系统/index.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%A4%A7%E4%BA%8B%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/
+  "v-8148a518": defineAsyncComponent(() => import(/* webpackChunkName: "v-8148a518" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3大事件管理系统/index.html.vue")),
   // path: /notes/fe/vue/Vue3%E5%B0%8F%E5%85%94%E9%B2%9C%E9%A1%B9%E7%9B%AE/
   "v-ebf19db2": defineAsyncComponent(() => import(/* webpackChunkName: "v-ebf19db2" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3小兔鲜项目/index.html.vue")),
+  // path: /notes/fe/vue/Vue3%E5%B0%9A%E5%8C%BB%E9%80%9A/
+  "v-2ef70240": defineAsyncComponent(() => import(/* webpackChunkName: "v-2ef70240" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3尚医通/index.html.vue")),
 }
