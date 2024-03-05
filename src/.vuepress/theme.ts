@@ -45,8 +45,9 @@ export default hopeTheme({
   plugins: {
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
+      tabs: true,
       // 启用自定义容器
-      container: true,
+      hint: true,
       // 启用选项卡
       codetabs: true,
       // 启用vue演示
@@ -76,7 +77,6 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
-      tabs: true,
       vPre: true
     },
     components: {
