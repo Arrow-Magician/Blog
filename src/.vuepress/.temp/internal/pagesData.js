@@ -13,14 +13,12 @@ export const pagesData = {
   "v-6e19edb7": () => import(/* webpackChunkName: "v-6e19edb7" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/demo/page.html.js").then(({ data }) => data),
   // path: /demo/
   "v-1473bf53": () => import(/* webpackChunkName: "v-1473bf53" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/demo/index.html.js").then(({ data }) => data),
-  // path: /notes/
-  "v-e8b6c472": () => import(/* webpackChunkName: "v-e8b6c472" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/index.html.js").then(({ data }) => data),
   // path: /guide/
   "v-fffb8e28": () => import(/* webpackChunkName: "v-fffb8e28" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/index.html.js").then(({ data }) => data),
+  // path: /notes/
+  "v-e8b6c472": () => import(/* webpackChunkName: "v-e8b6c472" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/index.html.js").then(({ data }) => data),
   // path: /resources/
   "v-7fe15663": () => import(/* webpackChunkName: "v-7fe15663" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/resources/index.html.js").then(({ data }) => data),
-  // path: /notes/hospital/
-  "v-0b4bbb4e": () => import(/* webpackChunkName: "v-0b4bbb4e" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/hospital/index.html.js").then(({ data }) => data),
   // path: /guide/bar/baz.html
   "v-177e1f06": () => import(/* webpackChunkName: "v-177e1f06" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/bar/baz.html.js").then(({ data }) => data),
   // path: /guide/bar/
@@ -29,12 +27,18 @@ export const pagesData = {
   "v-0b6fc5f8": () => import(/* webpackChunkName: "v-0b6fc5f8" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/foo/ray.html.js").then(({ data }) => data),
   // path: /guide/foo/
   "v-5d5821d6": () => import(/* webpackChunkName: "v-5d5821d6" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/guide/foo/index.html.js").then(({ data }) => data),
+  // path: /notes/hospital/
+  "v-0b4bbb4e": () => import(/* webpackChunkName: "v-0b4bbb4e" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/hospital/index.html.js").then(({ data }) => data),
   // path: /notes/be/python/
   "v-5d47920e": () => import(/* webpackChunkName: "v-5d47920e" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/be/python/index.html.js").then(({ data }) => data),
+  // path: /notes/fe/css/Bootstrap.html
+  "v-25df58c0": () => import(/* webpackChunkName: "v-25df58c0" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/css/Bootstrap.html.js").then(({ data }) => data),
   // path: /notes/fe/css/CSS.html
   "v-7239320b": () => import(/* webpackChunkName: "v-7239320b" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/css/CSS.html.js").then(({ data }) => data),
   // path: /notes/fe/css/%E4%BD%9C%E4%B8%9A.html
   "v-56b99e3a": () => import(/* webpackChunkName: "v-56b99e3a" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/css/作业.html.js").then(({ data }) => data),
+  // path: /notes/fe/css/%E5%8A%A8%E7%94%BB.html
+  "v-4a51a1eb": () => import(/* webpackChunkName: "v-4a51a1eb" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/css/动画.html.js").then(({ data }) => data),
   // path: /notes/fe/css/%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF.html
   "v-0107ac38": () => import(/* webpackChunkName: "v-0107ac38" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/css/学成在线.html.js").then(({ data }) => data),
   // path: /notes/fe/css/%E5%B0%8F%E5%85%94%E9%B2%9C.html
@@ -51,6 +55,106 @@ export const pagesData = {
   "v-d6d1c358": () => import(/* webpackChunkName: "v-d6d1c358" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/html/作业.html.js").then(({ data }) => data),
   // path: /notes/fe/html/%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B.html
   "v-2fb3a203": () => import(/* webpackChunkName: "v-2fb3a203" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/html/综合案例.html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/01-Expanding%20Cards(%E6%89%A9%E5%B1%95%E5%8D%A1%E7%89%87).html
+  "v-27c43384": () => import(/* webpackChunkName: "v-27c43384" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/01-Expanding Cards(扩展卡片).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/02-Progress%20Steps(%E6%AD%A5%E9%AA%A4%E5%99%A8).html
+  "v-490a6382": () => import(/* webpackChunkName: "v-490a6382" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/02-Progress Steps(步骤器).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/03-Rotating%20Nav%20Animation(%E6%97%8B%E8%BD%AC%E5%AF%BC%E8%88%AA).html
+  "v-15a2a89b": () => import(/* webpackChunkName: "v-15a2a89b" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/03-Rotating Nav Animation(旋转导航).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/04-Hidden%20Search(%E9%9A%90%E8%97%8F%E6%90%9C%E7%B4%A2%E6%A1%86).html
+  "v-59aea8c0": () => import(/* webpackChunkName: "v-59aea8c0" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/04-Hidden Search(隐藏搜索框).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/05-Blurry%20Loading(%E5%BB%B6%E6%97%B6%E5%8A%A0%E8%BD%BD).html
+  "v-1dd003dc": () => import(/* webpackChunkName: "v-1dd003dc" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/05-Blurry Loading(延时加载).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/06-Scroll%20Animation(%E6%BB%9A%E5%8A%A8%E5%8A%A8%E7%94%BB).html
+  "v-e718576c": () => import(/* webpackChunkName: "v-e718576c" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/06-Scroll Animation(滚动动画).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/07-Split%20langding%20page(%E9%A1%B5%E9%9D%A2%E5%88%86%E8%A3%82).html
+  "v-0d15e3f0": () => import(/* webpackChunkName: "v-0d15e3f0" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/07-Split langding page(页面分裂).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/08-Form%20Input%20Wave(%E8%BE%93%E5%85%A5%E6%A1%86%E6%B3%A2%E6%B5%AA%E5%BC%B9%E8%B7%B3%E5%8A%A8%E7%94%BB).html
+  "v-5ffbce13": () => import(/* webpackChunkName: "v-5ffbce13" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/08-Form Input Wave(输入框波浪弹跳动画).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/09-Sound%20Board(%E9%9F%B3%E6%9D%BF).html
+  "v-0b0b0c33": () => import(/* webpackChunkName: "v-0b0b0c33" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/09-Sound Board(音板).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/10-Random%20Jokes(%E9%9A%8F%E6%9C%BA%E7%AC%91%E8%AF%9D).html
+  "v-0f864a5c": () => import(/* webpackChunkName: "v-0f864a5c" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/10-Random Jokes(随机笑话).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/11-Event-Keyborad(%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6).html
+  "v-474069e8": () => import(/* webpackChunkName: "v-474069e8" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/11-Event-Keyborad(键盘事件).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/12-faq%20collapse(%E9%97%AE%E9%A2%98%E5%8D%A1%E7%89%87).html
+  "v-054373bf": () => import(/* webpackChunkName: "v-054373bf" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/12-faq collapse(问题卡片).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/13-Random%20Choice%20Picker(%E9%9A%8F%E6%9C%BA%E9%80%89%E6%8B%A9).html
+  "v-58cbf418": () => import(/* webpackChunkName: "v-58cbf418" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/13-Random Choice Picker(随机选择).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/14-Animated-Navigation(%E5%AF%BC%E8%88%AA%E5%8A%A8%E7%94%BB).html
+  "v-96e0c7ca": () => import(/* webpackChunkName: "v-96e0c7ca" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/14-Animated-Navigation(导航动画).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/15-Increment-Counter(%E8%AE%A1%E6%95%B0%E5%99%A8).html
+  "v-189df42e": () => import(/* webpackChunkName: "v-189df42e" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/15-Increment-Counter(计数器).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/16-Drink-Water(%E5%96%9D%E6%B0%B4%E5%8A%A8%E7%94%BB).html
+  "v-43ba0665": () => import(/* webpackChunkName: "v-43ba0665" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/16-Drink-Water(喝水动画).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/17-Movie-App(%E7%94%B5%E5%BD%B1%E9%A1%B5%E9%9D%A2).html
+  "v-5f3f8a28": () => import(/* webpackChunkName: "v-5f3f8a28" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/17-Movie-App(电影页面).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/18-Background%20Slider(%E8%BD%AE%E6%92%AD%E5%9B%BE).html
+  "v-6b4f7b8a": () => import(/* webpackChunkName: "v-6b4f7b8a" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/18-Background Slider(轮播图).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/19-Theme%20Clock(%E4%B8%BB%E9%A2%98%E6%97%B6%E9%92%9F).html
+  "v-2a68acaa": () => import(/* webpackChunkName: "v-2a68acaa" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/19-Theme Clock(主题时钟).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/20-Button%20Ripple(%E5%8A%A8%E7%94%BB%E6%8C%89%E9%92%AE).html
+  "v-21d19b24": () => import(/* webpackChunkName: "v-21d19b24" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/20-Button Ripple(动画按钮).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/21-Drag%20And%20Drop(%E6%8B%96%E6%8B%BD%E4%BA%8B%E4%BB%B6).html
+  "v-51f4aa01": () => import(/* webpackChunkName: "v-51f4aa01" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/21-Drag And Drop(拖拽事件).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/22-Drawing%20App(%E7%BB%98%E7%94%BB%E6%9D%BF).html
+  "v-5702022e": () => import(/* webpackChunkName: "v-5702022e" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/22-Drawing App(绘画板).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/23-Kinetic%20Loader(%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD).html
+  "v-1d3950a9": () => import(/* webpackChunkName: "v-1d3950a9" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/23-Kinetic Loader(动态加载).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/24-Content-Placeholder(%E5%86%85%E5%AE%B9%E5%8D%A1%E7%89%87).html
+  "v-d31df72a": () => import(/* webpackChunkName: "v-d31df72a" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/24-Content-Placeholder(内容卡片).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/25-Sticky%20Navbar(%E5%8A%A8%E6%80%81%E5%AF%BC%E8%88%AA%E6%A0%8F).html
+  "v-7ccfd76a": () => import(/* webpackChunkName: "v-7ccfd76a" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/25-Sticky Navbar(动态导航栏).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/26-Vertical%20Slider(%E5%9E%82%E7%9B%B4%E6%BB%9A%E5%8A%A8%E6%9D%A1).html
+  "v-24257a2f": () => import(/* webpackChunkName: "v-24257a2f" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/26-Vertical Slider(垂直滚动条).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/27-Toasts%20Notification(%E6%8F%90%E7%A4%BA%E5%8D%A1%E7%89%87).html
+  "v-7af030b5": () => import(/* webpackChunkName: "v-7af030b5" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/27-Toasts Notification(提示卡片).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/28-Github%20Profiles(Github%E5%8D%A1%E7%89%87).html
+  "v-2bf3b36a": () => import(/* webpackChunkName: "v-2bf3b36a" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/28-Github Profiles(Github卡片).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/29-Double%20Click%20Heart(%E5%8F%8C%E5%87%BB%E5%B0%8F%E7%BA%A2%E5%BF%83).html
+  "v-f391045c": () => import(/* webpackChunkName: "v-f391045c" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/29-Double Click Heart(双击小红心).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/30-Auto%20text%20effect(%E6%96%87%E5%AD%97%E6%B5%AE%E7%8E%B0).html
+  "v-dac9b3f2": () => import(/* webpackChunkName: "v-dac9b3f2" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/30-Auto text effect(文字浮现).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/31-Password%20Generator(%E9%9A%8F%E6%9C%BA%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8).html
+  "v-3b05bd3c": () => import(/* webpackChunkName: "v-3b05bd3c" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/31-Password Generator(随机密码生成器).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/32-Good%20Cheap%20Fast(%E9%80%89%E6%8B%A9%E5%99%A8).html
+  "v-9dad04ba": () => import(/* webpackChunkName: "v-9dad04ba" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/32-Good Cheap Fast(选择器).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/33-Notes%20App(%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6).html
+  "v-a10f4d88": () => import(/* webpackChunkName: "v-a10f4d88" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/33-Notes App(笔记软件).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/34-Animatied%20Countdown(%E5%80%92%E8%AE%A1%E6%97%B6%E5%8A%A8%E7%94%BB).html
+  "v-0d90ae24": () => import(/* webpackChunkName: "v-0d90ae24" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/34-Animatied Countdown(倒计时动画).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/35-Image%20Carousel(%E5%9B%BE%E7%89%87%E8%BD%AE%E6%92%AD).html
+  "v-f5c2428c": () => import(/* webpackChunkName: "v-f5c2428c" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/35-Image Carousel(图片轮播).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/36-Hoverboard(%E6%82%AC%E6%B5%AE%E7%94%BB%E6%9D%BF).html
+  "v-7cef7f09": () => import(/* webpackChunkName: "v-7cef7f09" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/36-Hoverboard(悬浮画板).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/38-Mobile%20Tab%20Navigation(%E6%89%8B%E6%9C%BA%E5%AF%BC%E8%88%AA%E6%A0%8F).html
+  "v-c28b1e64": () => import(/* webpackChunkName: "v-c28b1e64" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/38-Mobile Tab Navigation(手机导航栏).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/39-Image%20Password%20Strength(%E5%AF%86%E7%A0%81%E9%95%BF%E5%BA%A6%E6%94%B9%E5%8F%98%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87).html
+  "v-a8fe0742": () => import(/* webpackChunkName: "v-a8fe0742" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/39-Image Password Strength(密码长度改变背景图片).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/40-3d%20Background%20Boxes(3d%E8%83%8C%E6%99%AF%E7%9B%92%E5%AD%90).html
+  "v-5326e660": () => import(/* webpackChunkName: "v-5326e660" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/40-3d Background Boxes(3d背景盒子).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/41-Verify%20Account%20UI(%E9%AA%8C%E8%AF%81%E7%A0%81UI).html
+  "v-9189d4bc": () => import(/* webpackChunkName: "v-9189d4bc" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/41-Verify Account UI(验证码UI).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/42-Live%20User%20Filter(%E5%AE%9E%E6%97%B6%E7%94%A8%E6%88%B7%E7%AD%9B%E9%80%89%E5%99%A8).html
+  "v-3e4a66e7": () => import(/* webpackChunkName: "v-3e4a66e7" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/42-Live User Filter(实时用户筛选器).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/43-Feedback%20Ui%20Design(%E5%8F%8D%E9%A6%88UI%E8%AE%BE%E8%AE%A1).html
+  "v-3249c0b6": () => import(/* webpackChunkName: "v-3249c0b6" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/43-Feedback Ui Design(反馈UI设计).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/44-Custom%20Range%20Slider(%E6%BB%91%E5%9D%97).html
+  "v-4554b7dd": () => import(/* webpackChunkName: "v-4554b7dd" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/44-Custom Range Slider(滑块).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/45-Mobile%20Navigation(%E4%BE%A7%E8%BE%B9%E5%AF%BC%E8%88%AA%E6%A0%8F).html
+  "v-5c4ffac3": () => import(/* webpackChunkName: "v-5c4ffac3" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/45-Mobile Navigation(侧边导航栏).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/46-Quiz%20App(%E9%97%AE%E7%AD%94%E5%8D%A1%E7%89%87).html
+  "v-5b26d2a2": () => import(/* webpackChunkName: "v-5b26d2a2" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/46-Quiz App(问答卡片).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/47-Testimonial%20Box%20Switcher(%E5%8A%A8%E6%80%81%E8%BF%9B%E5%BA%A6%E6%9D%A1%E5%88%87%E6%8D%A2%E5%8D%A1%E7%89%87).html
+  "v-76482842": () => import(/* webpackChunkName: "v-76482842" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/47-Testimonial Box Switcher(动态进度条切换卡片).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/48-Random%20Image%20Generator(%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA).html
+  "v-06fcde48": () => import(/* webpackChunkName: "v-06fcde48" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/48-Random Image Generator(随机图片显示).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/49-Todo%20List(%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%E6%B8%85%E5%8D%95).html
+  "v-96d570a4": () => import(/* webpackChunkName: "v-96d570a4" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/49-Todo List(待办事项清单).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/50-Insect%20Catch%20Game(%E6%8A%93%E8%99%AB%E6%B8%B8%E6%88%8F).html
+  "v-34a50e2c": () => import(/* webpackChunkName: "v-34a50e2c" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/50-Insect Catch Game(抓虫游戏).html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/50%20Project%2050%20Days/
+  "v-51dccc29": () => import(/* webpackChunkName: "v-51dccc29" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/50 Project 50 Days/index.html.js").then(({ data }) => data),
   // path: /notes/fe/javascript/AJAX/
   "v-521cf5d4": () => import(/* webpackChunkName: "v-521cf5d4" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/AJAX/index.html.js").then(({ data }) => data),
   // path: /notes/fe/javascript/AJAX/%E4%B8%80%E3%80%81AJAX%E5%85%A5%E9%97%A8.html
@@ -135,6 +239,8 @@ export const pagesData = {
   "v-6355fefa": () => import(/* webpackChunkName: "v-6355fefa" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/Web Apis/每日作业 - 3.html.js").then(({ data }) => data),
   // path: /notes/fe/javascript/Web%20Apis/%E6%AF%8F%E6%97%A5%E4%BD%9C%E4%B8%9A%20-%204.html
   "v-650ad799": () => import(/* webpackChunkName: "v-650ad799" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/Web Apis/每日作业 - 4.html.js").then(({ data }) => data),
+  // path: /notes/fe/javascript/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/
+  "v-61ea2fef": () => import(/* webpackChunkName: "v-61ea2fef" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/数据管理平台/index.html.js").then(({ data }) => data),
   // path: /notes/fe/javascript/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/%E9%BB%91%E9%A9%AC%E5%A4%B4%E6%9D%A1%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0.html
   "v-c5a629ec": () => import(/* webpackChunkName: "v-c5a629ec" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/数据管理平台/黑马头条数据管理平台.html.js").then(({ data }) => data),
   // path: /notes/fe/typescript/TypeScript%20%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/TypeScript.html
@@ -191,8 +297,6 @@ export const pagesData = {
   "v-799adb5b": () => import(/* webpackChunkName: "v-799adb5b" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/html/index.html.js").then(({ data }) => data),
   // path: /notes/fe/javascript/
   "v-b57be6ce": () => import(/* webpackChunkName: "v-b57be6ce" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/index.html.js").then(({ data }) => data),
-  // path: /notes/fe/javascript/%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/
-  "v-61ea2fef": () => import(/* webpackChunkName: "v-61ea2fef" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/javascript/数据管理平台/index.html.js").then(({ data }) => data),
   // path: /notes/fe/typescript/TypeScript%20%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/
   "v-10283b0a": () => import(/* webpackChunkName: "v-10283b0a" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/typescript/TypeScript 基础教程/index.html.js").then(({ data }) => data),
   // path: /notes/fe/typescript/
@@ -207,6 +311,4 @@ export const pagesData = {
   "v-ebf19db2": () => import(/* webpackChunkName: "v-ebf19db2" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3小兔鲜项目/index.html.js").then(({ data }) => data),
   // path: /notes/fe/vue/Vue3%E5%B0%9A%E5%8C%BB%E9%80%9A/
   "v-2ef70240": () => import(/* webpackChunkName: "v-2ef70240" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/vue/Vue3尚医通/index.html.js").then(({ data }) => data),
-  // path: /notes/fe/css/.~%E4%BD%9C%E4%B8%9A.html
-  "v-18a0e76a": () => import(/* webpackChunkName: "v-18a0e76a" */"H:/Programming Storage/Front end development/VuePress/my-docs-v2/src/.vuepress/.temp/pages/notes/fe/css/.~作业.html.js").then(({ data }) => data),
 }

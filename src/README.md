@@ -14,7 +14,7 @@ actions:
     type: primary
 
   - text: 资源
-    link: ./resoucres/
+    link: ./resources/
 
 footer: false
 ---
