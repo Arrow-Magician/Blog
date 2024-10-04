@@ -1,0 +1,21 @@
+// place your custom styles here
+.home {
+  .vp-hero-info-wrapper {
+    min-height: 600px;
+  }
+}
+
+// 小标题加粗
+.header-anchor{
+  font-weight: bold;
+}
+
+// h1标题加粗
+.vp-page-title h1{
+  font-weight: bolder;
+}
+
+// 返回顶部图标
+:root{
+  --back-to-top-icon: url('../public/back-to-top.svg');
+}
