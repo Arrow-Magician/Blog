@@ -12,6 +12,8 @@ export default sidebar({
   '/notes/fe/typescript': 'structure',
   '/notes/fe/git': 'structure',
   '/notes/web/huawei': 'structure',
+  '/notes/web/knowledge_points': 'structure',
+  '/notes/web/paper': 'structure',
 
   sidebarSorter: ['date']
 })

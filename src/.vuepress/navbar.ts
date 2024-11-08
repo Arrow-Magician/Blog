@@ -34,12 +34,20 @@ export default navbar([
         prefix: 'web/',
         children: [
           {
+            text: '知识点',
+            link: 'knowledge_points/数据通信基础/码元种类.md'
+          },
+          {
             text: '华为配置',
             link: 'huawei/二、VLAN配置.md'
           },
           {
             text: '案例分析',
-            link: 'case/README.md'
+            link: 'case/路由交换网络专题（1）.md'
+          },
+          {
+            text: '论文',
+            link: 'paper/论文链接.md'
           }
         ]
       }

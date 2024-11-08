@@ -11,10 +11,8 @@ order: 7
 # 1.基本 ACL
 [Huawei] acl 2000 # 创建 ACL 2000
 [Huawei] acl name linNB 2000 # 创建名为 linNB 的 ACL 2000
-[Huawei-acl-basic-2000] rule 5 permit source 192.168.10.0 0.0.0.255 # 规则 5，放行源地址为 192.168.10.0/24
-网段的数据通过
-[Huawei-acl-basic-2000] rule 5 deny source 192.168.10.0 0.0.0.255 # 规则 5，拒绝源地址为 192.168.10.0/24
-网段的数据通过
+[Huawei-acl-basic-2000] rule 5 permit source 192.168.10.0 0.0.0.255 # 规则 5，放行源地址为 192.168.10.0/24网段的数据通过
+[Huawei-acl-basic-2000] rule 5 deny source 192.168.10.0 0.0.0.255 # 规则 5，拒绝源地址为 192.168.10.0/24网段的数据通过
 [Huawei-acl-basic-2000] rule 5 permit source any # 规则 5，放行任意源地址网段的数据通过
 [Huawei-acl-basic-2000] rule 5 deny source any # 规则 5，拒绝任意源地址网段的数据通过
 [Huawei-GigabitEthernet0/0/0] traffic-filter inbound acl 2000 # 在 g0/0/0 接口调用入方向 ACL 2000
@@ -22,16 +20,12 @@ order: 7
 
 # 2.扩展 ACL
 [Huawei] acl 3000 # 创建 ACL 3000
-[Huawei-acl-adv-3000] rule deny tcp source 192.168.1.0 0.0.0.255 source-port eq 80 destination 192.168.2.0
-0.0.0.255 destination-port eq 80 # 拒绝 192.168.1.0/24 网段 TCP 80 端口访问
-192.168.2.0/24 网段 TCP 80 端口
+[Huawei-acl-adv-3000] rule deny tcp source 192.168.1.0 0.0.0.255 source-port eq 80 destination 192.168.2.0 0.0.0.255 destination-port eq 80 # 拒绝 192.168.1.0/24 网段 TCP 80 端口访问 192.168.2.0/24 网段 TCP 80 端口
 
 # 3.时间 ACL
 [Huawei] time-range A 9:00 to 17:00 working-day # 配置时间列表 A 为工作日的 9:00 至 17:00
-[Huawei] time-range A from 0:00 2021/1/1 to 0:00 2022/1/1 # ACL 时间列表范围为 2021 年 1 月 1 日 0 点至 2022
-年 1 月 1 日 0 点
-[Huawei-acl-basic-2000] rule deny source 192.168.1.0 0.0.0.255 time-range A # 拒绝时间列表的 192.168.1.0/24
-网段数据过
+[Huawei] time-range A from 0:00 2021/1/1 to 0:00 2022/1/1 # ACL 时间列表范围为 2021 年 1 月 1 日 0 点至 2022 年 1 月 1 日 0 点
+[Huawei-acl-basic-2000] rule deny source 192.168.1.0 0.0.0.255 time-range A # 拒绝时间列表的 192.168.1.0/24网段数据过
 [Huawei-GigabitEthernet0/0/0] traffic-filter inbound acl 2000 # 在 g0/0/0 接口调用入方向 ACL 2000
 
 # 4.IP 前缀列表
